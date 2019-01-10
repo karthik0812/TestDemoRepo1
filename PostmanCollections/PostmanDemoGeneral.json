@@ -27,10 +27,13 @@
               "",
               "var  bookName = randString(6);",
               "var  isbn = randString(6);",
+              "var  aisle = randString(6);",
+              "var  author = randString(6);",
               "",
-              "pm.globals.set(\"bookNamekey\", bookName);",
+              "pm.globals.set(\"bookNameKey\", bookName);",
               "pm.globals.set(\"isbnKey\", isbn);",
-              "",
+              "pm.globals.set(\"aisleKey\", aisle);",
+              "pm.globals.set(\"authorKey\", author);",
               "",
               ""
             ],
@@ -54,6 +57,7 @@
               "    ",
               " ",
               "postman.setGlobalVariable(\"bookId\", jsonData.ID);",
+              "",
               "",
               "tests[jsonData.Msg] = true;",
               "tests[\"Book ID: \"+jsonData.ID] = true;",
@@ -86,7 +90,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n\"name\":\"{{bookNamekey}}\",\r\n\"isbn\":\"{{isbnKey}}\",\r\n\"aisle\":\"2271\",\r\n\"author\":\"John foe1\"\r\n}"
+          "raw": "{\r\n\"name\":\"{{bookNameKey}}\",\r\n\"isbn\":\"{{isbnKey}}\",\r\n\"aisle\":\"{{aisleKey}}\",\r\n\"author\":\"{{authorKey}}\"\r\n}"
         },
         "url": "{{BaseURL}}/Library/Addbook.php"
       },
