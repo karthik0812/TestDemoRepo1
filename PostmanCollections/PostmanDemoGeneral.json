@@ -27,7 +27,7 @@
               "",
               "var  bookName = randString(6);",
               "var  isbn = randString(6);",
-              "var  aisle = randString(6);",
+              "var  aisle = \"2271\";",
               "var  author = randString(6);",
               "",
               "pm.globals.set(\"bookNameKey\", bookName);",
