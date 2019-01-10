@@ -124,7 +124,7 @@
               "    tests[\"AISLE: \"+jsonData[0].aisle] = true;",
               "    tests[\"Author: \"+jsonData[0].author] = true;",
               "    ",
-              "}else{",
+              "}else if(responseCode.code == 404){",
               "tests[\"Book not searched successfully\"] =false;",
               "tests[\"Response code: \"+responseCode.code] =false;",
               "tests[\"Error message: \"+errorMessage] = false;",
