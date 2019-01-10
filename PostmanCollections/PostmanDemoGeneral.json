@@ -183,7 +183,7 @@
               "//Set Variables ",
               "if (responseCode.code == 200) ",
               "{",
-              "    tests[\"Status code is: \"+responseCode.code];",
+              "    tests[\"Status code is: \"+responseCode.code]= responseCode.code === 200;",
               "    tests[\"Books searched Successfully by Author\"] = jsonData.length >= 1;",
               "}else if(responseCode.code == 404){",
               "tests[\"Book not searched successfully\"] =true;",
