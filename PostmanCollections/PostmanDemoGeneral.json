@@ -201,7 +201,7 @@
           "raw": ""
         },
         "url": {
-          "raw": "{{BaseURL}}/Library/GetBook.php?AuthorName={{Author}}",
+          "raw": "{{BaseURL}}/Library/GetBook.php?AuthorName={{authorKey}}",
           "host": [
             "{{BaseURL}}"
           ],
@@ -212,7 +212,7 @@
           "query": [
             {
               "key": "AuthorName",
-              "value": "{{Author}}",
+              "value": "{{authorKey}}",
               "equals": true
             }
           ]
