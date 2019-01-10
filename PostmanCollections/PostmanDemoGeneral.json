@@ -106,9 +106,7 @@
             "id": "4fa44cf3-d612-4d32-aab5-0c62684a456a",
             "exec": [
               "//Statuse Code Assertions",
-              "pm.test(\"Body is correct\", function () {",
-              "    pm.response.to.have.body(\"response_body_string\");",
-              "});",
+              "",
               "var jsonData = JSON.parse(responseBody);",
               "var errorMessage = jsonData.msg;",
               "",
